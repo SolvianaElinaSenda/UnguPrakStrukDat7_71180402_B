@@ -52,17 +52,10 @@ class UndoRedo:
             self.push(x)
             print(x)
 
-    def printInfo(self):
-        if self._size == 0:
-            return "Empty"
-        else:
-            result = '(top) '
-            # mulai dari head sampai ke ujung
-            helper = self._head
-            while helper != None:
-                result = result+str(helper.data)+'\t'
-                helper = helper.next
-            return result
+    # def printInfo(self):
+    #     if self._size == 0:
+    #         return "Empty"
+    #     else:
 
 
 if __name__ == "__main__":
